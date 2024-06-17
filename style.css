@@ -1,0 +1,170 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    height: 100%;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    /* Volle Breite */
+    max-width: 1200px;
+    overflow-x: auto;
+    /* Horizontales Scrollen aktivieren */
+}
+.container.auth{
+    max-width: 600px;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.backbutton {
+    margin-bottom: 10px;
+    display: block;
+}
+
+button {
+    padding: 8px 16px;
+    margin-bottom: 4px;
+    border: none;
+    background-color: #a0a0a0;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #007bff;
+}
+
+.container form input,
+.container form select {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th {
+    background-color: #f0f0f0;
+}
+
+table th,
+table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+    white-space: nowrap;
+    /* Verhindert das Umbruch von Zelleninhalt */
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pagination a {
+    padding: 8px 16px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    color: #333;
+    border-radius: 3px;
+}
+
+.pagination a.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.pagination a:hover {
+    background-color: #ddd;
+}
+
+.search {
+    margin-bottom: 20px;
+}
+.search form{
+    flex-direction: row;
+}
+
+.search input[type="text"] {
+    padding: 8px;
+    width: 300px;
+    margin-right: 10px;
+}
+
+.message {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.error {
+    background-color: red;
+    color: white;
+}
+
+.success {
+    background-color: green;
+    color: white;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.actions form {
+    margin-bottom: 0;
+}
+
+.actions select {
+    padding: 8px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+/* Responsive Anpassungen für die Tabelle */
+@media only screen and (max-width: 768px) {
+    table {
+        width: 100%;
+        overflow-x: auto;
+        /* Horizontales Scrollen aktivieren */
+        display: block;
+    }
+
+    table th,
+    table td {
+        min-width: 150px;
+        /* Mindestbreite für Zellen */
+    }
+}
